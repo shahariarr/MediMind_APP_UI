@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'medications_page.dart'; // Add this import
 
 class BottomNavBar extends StatefulWidget {
   final int currentIndex;
@@ -100,7 +101,7 @@ class _BottomNavBarState extends State<BottomNavBar> with SingleTickerProviderSt
     _animationController.reset();
     _animationController.forward();
     
-    // Navigate to the selected route
+    // Use named routes for consistent navigation
     Navigator.pushReplacementNamed(context, route);
   }
   
